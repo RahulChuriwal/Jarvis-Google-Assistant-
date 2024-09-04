@@ -7,7 +7,7 @@ import google.generativeai as genai
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "2b025ef428fd43409082dcbb8d2e7c5d"  # Replace with your actual News API key
+newsapi = <API_KEY>  # Replace with your actual News API key
 
 def speak(text):
     """Function to convert text to speech."""
@@ -17,7 +17,7 @@ def speak(text):
 def aiProcess(command):
     import google.generativeai as genai
 
-    API_KEY = "AIzaSyD7yR5UBY4UJjrDXoNFI_1X9k3qxJlFTi0"  
+    API_KEY = <API_KEY>
     genai.configure(api_key=API_KEY)
 
     model = genai.GenerativeModel("gemini-1.5-flash")
